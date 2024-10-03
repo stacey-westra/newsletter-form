@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sign Up</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #01204E;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #newsletter {
+            height: 380px;
+        }
+
+        #form {
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        #card {
+            display: flex;
+            background-color: #FEAE6F;
+            justify-content: center;
+            border-radius: 12px;
+            height: 400px;
+            width: 800px;
+        }
+
+        #outside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #img-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+
+        h1 {
+            color: #01204E;
+            font-family: montserrat;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+
+        #name {
+            margin-bottom: 1rem;
+            width: 200px;
+        }
+
+        #mail {
+            margin-bottom: 1rem;
+            width: 200px;
+        }
+
+        button {
+            margin-left: 2em;
+            height: 30px;
+            background-color: #028391;
+            color: #F6DCAC;
+            font-family: Montserrat;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background-color: #01204E;
+            cursor: pointer;
+        }
+
+        #p-name {
+            width: 300px;
+        }
+
+        #p-email {
+            width: 300px;
+        }
+
+        label {
+            margin-right: 0.5em;
+            color: #01204E;
+            font-family: montserrat;
+            font-weight: 500;
+        }
+
+       
+
+        @media (max-width: 800px) {
+            #card {
+                width: 600px;
+                height: 300px;
+            }
+            
+            #Newsletter {
+                width: 250px;
+                height: 250px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            #img-cont {
+                width: 300px;
+                height: 300px;
+            }
+
+            #form {
+                height: 300px;
+                width: 300px;
+                padding: 0px;
+                margin-right: 2rem
+            }
+
+            #p-name {
+                margin-top: 2rem;
+            }
+
+            label {
+                font-size: 15px;
+            }            
+        }
+
+
+
+        @media (max-width: 600px) {
+            #card {
+                width: 350px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #Newsletter {
+                width: 250px;
+                height: 250px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            #img-cont {
+                width: 250px;
+                height: 250px;
+            }
+
+            #p-name {
+                margin-top: 2rem;
+            }
+
+            label {
+                font-size: 15px;
+            }       
+            
+            #form {
+                margin-left: 1rem;
+                height: 250px;
+            }
+        }    
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div id="outside">
+        <div class="container" id="card">
+            <div class="container" id="img-cont">
+                <img src="./Images/newsletter.png" id="newsletter" alt="newsletter graphic">
+            </div>    
+            <div class="container" id="form">
+                <form action="my-handling-form-page" method="post">
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <p id="p-name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                    </p>
+                    <p id="p-email">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="user_email">
+                    </p>
+                    <p class="button">
+                        <button type="submit">Subscribe</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
